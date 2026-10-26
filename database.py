@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 # PostgreSQL Connection URL
 SQLALCHEMY_DATABASE_URL = os.getenv(
     "DATABASE_URL", 
-    "postgresql://postgres:750644@localhost:5432/garment_erp_db"
+    "postgresql://postgres:password@localhost:5432/garment_erp_db"
 )
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
